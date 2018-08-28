@@ -1,0 +1,101 @@
+$fontMain: 'Montserrat';
+$fontSubtle: 'Verdana';
+
+$themeColour: #F9D435;
+$grayBackground: #f7f7f7;
+$grayFont: #757575;
+$darkGray: #222222;
+$white: #FFFFFF;
+$black: #000000;
+
+/* ---- OVERALL STYLES ---- */
+body {font-family: $fontMain;}
+.fontSubtle {font-family: $fontSubtle; font-style: italic;}
+.white-background {background-color: $white;}
+.gray-background {background-color: $grayBackground;}
+
+.section-name {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.subsection-name {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: $fontMain;
+}
+
+.section-description {
+    text-align: center;
+    font-size: 15px;
+    font-style: italic;
+}
+
+.theme-button {
+    background-color: $themeColour;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    font-size: 14px;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: .2s ease-out;
+    &:hover {
+        background-color: $darkGray;
+        color: $themeColour;
+    }
+}
+
+/* ---- HEADER ----*/
+header {
+   .hero {
+        background: url('https://images.pexels.com/photos/269825/pexels-photo-269825.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+        background-size: cover;
+        height: 500px;
+       .logo {
+            line-height: 50px;
+       }
+       nav {
+        float: right;
+           ul {
+            list-style-type: none;
+               li{
+                   display: inline-block;
+                   a {
+                    width: 100px;
+                    text-align: center;
+                    line-height: 50px;
+                    display: block;
+                    height: 50px;
+                    text-decoration: none;
+                    color: $white;
+                    border-radius: 5px;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    transition: .2s ease-out;
+                    &:hover {
+                        background: $darkGray;
+                        color: $themeColour;
+                    }
+                   }
+               }
+           }
+       }
+       .slogan {
+            color: white;
+            text-align: center;
+            .welcome {
+                font-style: italic;
+            }
+            .slogan {
+                text-transform: uppercase;
+            }
+       }
+   } 
+}
+
+/* ---- SERVICES SECTION ---- */
+

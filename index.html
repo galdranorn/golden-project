@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="pl">
-
+<html lang="en">
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Golden page</title>
-		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="/css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Merriweather:300i,400,400i|Montserrat:400,700" rel="stylesheet"> 
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" >
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	</head>
 
 	<body>
-		<header>
-			<div class="container">
+		<header class="font">
+			<div class="hero">
 				<img src="#" class="logo" alt="logo">
 				<nav>
 					<ul>
@@ -23,14 +23,13 @@
 						<li><a href="#">Contact</a></li>    
 					</ul>
 				</nav>
+				<div class="slogan">
+					<h2 class="welcome fontSubtle">Welcome To Our Studio!</h2>
+					<h1 class="slogan">It's nice to meet you</h1>
+					<button class="theme-button">Tell me more</button>
+				</div>			
 			</div>
 		</header>
-
-		<section class="hero">
-			<h2 class="welcome">Welcome To Our Studio!</h2>
-			<h1 class="slogan">It's nice to meet you</h1>
-			<button class="theme-button">Tell me more</button>
-		</section>
 
 		<section class="services white-background">
 			<div class="container">
@@ -39,24 +38,24 @@
 				<div class="row">
 					 <div class="col-4 col-sm-4 col-xs-12">
 						<i class="fa fa-cogs"></i>
-						<h4>E-Commerce</h4>
+						<h4 class="subsection-name">E-Commerce</h4>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec lobortis felis, nec condimentum nulla.</p>
 					</div>
 					<div class="col-4 col-sm-4 col-xs-12">
 						<i class="fa fa-cogs"></i>
-						<h4>Responsive Web</h4>
+						<h4 class="subsection-name">Responsive Web</h4>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec lobortis felis, nec condimentum nulla.</p>
 					</div>
 					<div class="col-4 col-sm-4 col-xs-12">
 						<i class="fa fa-cogs"></i>
-						<h4>Web Security</h4>
+						<h4 class="subsection-name">Web Security</h4>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec lobortis felis, nec condimentum nulla.</p>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<section class="our-portfolio grey-background">
+		<section class="our-portfolio gray-background">
 			<div class="container">
 				<h1 class="section-name">Our portfolio</h1>
 				<h3 class="section-description">In nec lobortis felis, nec condimentum nulla</h3>
@@ -66,24 +65,24 @@
 							<a href="#"><i class="fa fa-info"></i></a>
 						</div>
 						<img src="#" alt="">
-						<h4 class="portfolio-name">Ebony&Ivory</h4>
-						<h5 class="description">Branding</h5>
+						<h4 class="subsection-name">Ebony&Ivory</h4>
+						<h5 class="fontSubtle">Branding</h5>
 					</div>
 					<div class="col-4 col-sm-4 col-xs-12">
 						<div class="layer">
 							<a href="#"><i class="fa fa-info"></i></a>
 						</div>
 						<img src="#" alt="">
-						<h4 class="portfolio-name">Smart Stationary</h4>
-						<h5 class="description">Print Design</h5>
+						<h4 class="subsection-name">Smart Stationary</h4>
+						<h5 class="fontSubtle">Print Design</h5>
 					</div>
 					<div class="col-4 col-sm-4 col-xs-12">
 						<div class="layer">
 							<a href="#"><i class="fa fa-info"></i></a>
 						</div>
 						<img src="#" alt="">
-						<h4 class="portfolio-name">Clever Poster</h4>
-						<h5 class="description">Print design</h5>
+						<h4 class="subsection-name">Clever Poster</h4>
+						<h5 class="fontSubtle">Print design</h5>
 					</div>
 				</div>
 				<div class="row">
@@ -92,16 +91,16 @@
 							<a href="#"><i class="fa fa-info"></i></a>
 						</div>
 						<img src="#" alt="">
-						<h4 class="portfolio-name">Vinyl Record</h4>
-						<h5 class="description">Product Mock-up</h5>
+						<h4 class="subsection-name">Vinyl Record</h4>
+						<h5 class="fontSubtle">Product Mock-up</h5>
 					</div>
 					<div class="col-4 col-sm-4 col-xs-12">
 						<div class="layer">
 							<a href="#"><i class="fa fa-info"></i></a>
 						</div>
 						<img src="#" alt="">
-						<h4 class="portfolio-name">Treehouse Template</h4>
-						<h5 class="description">Web Design</h5>
+						<h4 class="subsection-name">Treehouse Template</h4>
+						<h5 class="fontSubtle">Web Design</h5>
 					</div>
 					<div class="col-4 col-sm-4 col-xs-12">
 						<div class="layer">
@@ -109,7 +108,7 @@
 						</div>
 						<img src="#" alt="">
 						<h4 class="portfolio-name">Burned Logo</h4>
-						<h5 class="description">Branding</h5>
+						<h5 class="fontSubtle">Branding</h5>
 					</div>
 				</div>
 			</div>
@@ -122,9 +121,9 @@
 				<div class="row">
 					<div class="col-2 d-none d-sm-block"></div>
 					<div class="col-3">
-						<h3 class="date">July 2010</h3>
-						<h5 class="title">Our Humble Beggins</h5>
-						<p>jlkdajsdksa</p>
+						<h3 class="subsection-name date">July 2010</h3>
+						<h5 class="subsection-name">Our Humble Beggins</h5>
+						<p class="fontSubtle">jlkdajsdksa</p>
 					</div>
 					<div class="col-2">
 						<img>
@@ -139,18 +138,18 @@
 						<img>
 					</div>
 					<div class="col-3">
-						<h3 class="date">January 2011</h3>
-						<h5 class="title">Facing Startup Battles</h5>
-						<p>jlkdajsdksa</p>
+						<h3 class="subsection-name date">January 2011</h3>
+						<h5 class="subsection-name">Facing Startup Battles</h5>
+						<p class="fontSubtle">jlkdajsdksa</p>
 					</div>
 					<div class="col-2"></div>
 				</div>
 				<div class="row">
 					<div class="col-2"></div>
 					<div class="col-3">
-						<h3 class="date">January 2011</h3>
-						<h5 class="title">Facing Startup Battles</h5>
-						<p>jlkdajsdksa</p>
+						<h3 class="subsection-name date">January 2011</h3>
+						<h5 class="subsection-name">Facing Startup Battles</h5>
+						<p class="fontSubtle">jlkdajsdksa</p>
 					</div>
 					<div class="col-2">
 						<img>
@@ -182,24 +181,24 @@
 				<div class="row">
 					<div class="col-4 col-sm-4 col-xs-12">
 						<img src="#">
-						<h3 class="name">Kimberly Thompson</h3>
-						<h5 class="position">Marketer</h5>
+						<h3 class="subsection-name">Kimberly Thompson</h3>
+						<h5 class="fontSubtle">Marketer</h5>
 						<div class="social"></div>
 					</div>
 					<div class="col-4 col-sm-4 col-xs-12">
 						<img src="#">
-						<h3 class="name">Rico Massimo</h3>
-						<h5 class="position">Coder</h5>
+						<h3 class="subsection-name">Rico Massimo</h3>
+						<h5 class="fontSubtle">Coder</h5>
 						<div class="social"></div>
 					</div>
 					<div class="col-4 col-sm-4 col-xs-12">
 						<img src="#">
-						<h3 class="name">Uku Mason</h3>
-						<h5 class="position">Graphic Designer</h5>
+						<h3 class="subsection-name">Uku Mason</h3>
+						<h5 class="fontSubtle">Graphic Designer</h5>
 						<div class="social"></div>
 					</div>
 				</div>
-				<p>In nec lobortis felis, nec condimentum nulla</p>
+				<p class="fontSubtle">In nec lobortis felis, nec condimentum nulla</p>
 			</div>
 		</section>
 
