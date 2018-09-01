@@ -1,258 +1,89 @@
 /* ---- OVERALL STYLES ---- */
-body {
-  font-family: "Montserrat";
-}
+body { font-family: "Montserrat"; }
 
-.fontSubtle {
-  font-family: "Verdana";
-  font-style: italic;
-}
+.fontSubtle { font-family: "Verdana"; font-style: italic; }
 
-.white-background {
-  background-color: #FFFFFF;
-}
+.white-background { background-color: #FFFFFF; }
 
-.gray-background {
-  background-color: #f7f7f7;
-}
+.gray-background { background-color: #f7f7f7; }
 
-.section-name {
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: bold;
-}
+.section-name { text-align: center; text-transform: uppercase; font-weight: bold; }
 
-.subsection-name {
-  text-align: center;
-  font-weight: 700;
-  font-size: 20px;
-  font-family: "Montserrat";
-}
+.subsection-name { text-align: center; font-weight: 700; font-size: 20px; font-family: "Montserrat"; }
 
-.section-description {
-  text-align: center;
-  font-size: 15px;
-  font-style: italic;
-}
+.section-description { text-align: center; font-size: 15px; font-style: italic; }
 
-.theme-button {
-  background-color: #F9D435;
-  border-radius: 5px;
-  padding: 15px;
-  text-align: center;
-  font-size: 14px;
-  border: none;
-  text-transform: uppercase;
-  font-weight: bold;
-  transition: .2s ease-out;
-}
+.theme-button { background-color: #F9D435; border-radius: 5px; padding: 15px; text-align: center; font-size: 14px; border: none; text-transform: uppercase; font-weight: bold; transition: .2s ease-out; }
 
-.theme-button:hover {
-  background-color: #222222;
-  color: #F9D435;
-  transform: scale(1.1);
-}
+.theme-button:hover { background-color: #222222; color: #F9D435; transform: scale(1.1); }
 
-section {
-  padding: 10px 0;
-}
+section { padding: 10px 0; }
 
 /* ---- HEADER ----*/
-header .hero {
-  background: url("https://images.pexels.com/photos/269825/pexels-photo-269825.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-  background-size: cover;
-  height: 500px;
-}
+header .hero { background: url("https://images.pexels.com/photos/269825/pexels-photo-269825.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"); background-size: cover; height: 500px; }
 
-header .hero .logo {
-  line-height: 50px;
-}
+header .hero .logo { line-height: 50px; }
 
-header .hero nav {
-  float: right;
-}
+header .hero nav { float: right; }
 
-header .hero nav ul {
-  list-style-type: none;
-}
+header .hero nav ul { list-style-type: none; }
 
-header .hero nav ul li {
-  display: inline-block;
-}
+header .hero nav ul li { display: inline-block; }
 
-header .hero nav ul li a {
-  width: 100px;
-  text-align: center;
-  line-height: 50px;
-  display: block;
-  height: 50px;
-  text-decoration: none;
-  color: #FFFFFF;
-  border-radius: 5px;
-  font-weight: bold;
-  text-transform: uppercase;
-  transition: .2s ease-out;
-}
+header .hero nav ul li a { width: 100px; text-align: center; line-height: 50px; display: block; height: 50px; text-decoration: none; color: #FFFFFF; border-radius: 5px; font-weight: bold; text-transform: uppercase; transition: .2s ease-out; }
 
-header .hero nav ul li a:hover {
-  background: #222222;
-  color: #F9D435;
-}
+header .hero nav ul li a:hover { background: #222222; color: #F9D435; }
 
-header .hero .slogan {
-  color: white;
-  text-align: center;
-}
+header .hero .slogan { color: white; text-align: center; }
 
-header .hero .slogan .welcome {
-  font-style: italic;
-}
+header .hero .slogan .welcome { font-style: italic; }
 
-header .hero .slogan .slogan {
-  text-transform: uppercase;
-}
+header .hero .slogan .slogan { text-transform: uppercase; }
 
 /* ---- SERVICES SECTION ---- */
-.services .service {
-  text-align: center;
-}
+.services .service { text-align: center; }
 
-.services .service i {
-  text-align: center;
-  color: #F9D435;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  font-size: 30px;
-  transition: all .2s linear;
-  border-color: #F9D435;
-  border-width: 3px;
-  border-style: solid;
-  padding-top: 13px;
-}
+.services .service i { text-align: center; color: #F9D435; border-radius: 50%; width: 60px; height: 60px; font-size: 30px; transition: all .2s linear; border-color: #F9D435; border-width: 3px; border-style: solid; padding-top: 13px; }
 
-.services .service i:hover {
-  background: #222222;
-  color: #F9D435;
-  transform: scale(1.1);
-}
+.services .service i:hover { background: #222222; color: #F9D435; transform: scale(1.1); }
 
 /* ---- OUR PORTFOLIO ---- */
-.our-portfolio .pocket {
-  text-align: center;
-  width: 80%;
-  background-color: white;
-  padding: 5px;
-}
+.our-portfolio .pocket { text-align: center; width: 80%; background-color: white; padding: 5px; }
 
-.our-portfolio .pocket .img {
-  width: 100%;
-  position: relative;
-}
+.our-portfolio .pocket .img { width: 100%; position: relative; }
 
-.our-portfolio .pocket .img img {
-  width: 100%;
-}
+.our-portfolio .pocket .img img { width: 100%; }
 
-.our-portfolio .pocket .layer {
-  font-size: 100px;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background: rgba(0, 0, 0, 0.6);
-  top: 0;
-  left: 0;
-  color: #fff;
-  text-align: center;
-  line-height: 300px;
-  opacity: 0;
-  transition: .3s;
-}
+.our-portfolio .pocket .layer { font-size: 100px; width: 100%; height: 100%; position: absolute; background: rgba(0, 0, 0, 0.6); top: 0; left: 0; color: #fff; text-align: center; line-height: 300px; opacity: 0; transition: .3s; }
 
-.our-portfolio .pocket .layer i:hover {
-  color: #F9D435;
-}
+.our-portfolio .pocket .layer i:hover { color: #F9D435; }
 
-.our-portfolio .pocket .layer:hover {
-  opacity: 1;
-}
+.our-portfolio .pocket .layer:hover { opacity: 1; }
 
 /* ---- ABOUT US SECTION ----*/
 /* ---- OUR AMAZING TEAM ----*/
-.our-amazing-team {
-  text-align: center;
-}
+.our-amazing-team { text-align: center; }
 
-.our-amazing-team [class^="sm-"] {
-  display: inline-block;
-  color: #222222;
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  margin: 2px;
-  border-style: solid;
-  border-width: 2px;
-  font-size: 15px;
-  text-align: center;
-  transition: all .2s linear;
-}
+.our-amazing-team [class^="sm-"] { display: inline-block; color: #222222; border-radius: 50%; width: 30px; height: 30px; margin: 2px; border-style: solid; border-width: 2px; font-size: 15px; text-align: center; transition: all .2s linear; }
 
-.our-amazing-team [class^="sm-"]:hover {
-  background: #222222;
-  color: #F9D435;
-  transform: scale(1.2);
-}
+.our-amazing-team [class^="sm-"]:hover { background: #222222; color: #F9D435; transform: scale(1.2); }
 
-.our-amazing-team [class^="sm-"] i.fa::before {
-  margin: 5px 0;
-  display: block;
-}
+.our-amazing-team [class^="sm-"] i.fa::before { margin: 5px 0; display: block; }
 
 /* ---- CONTACT US SECTION ----*/
-.contact-us {
-  background-color: #222222;
-  color: #FFFFFF;
-  padding: 10px 0;
-}
+.contact-us { background-color: #222222; color: #FFFFFF; padding: 10px 0; }
 
-.contact-us .btn {
-  margin: 2px;
-}
+.contact-us .btn { margin: 2px; }
 
-.contact-us .msg {
-  padding-top: 0;
-}
+.contact-us .msg { padding-top: 0; }
 
 /* ---- FOOTER ---- */
-footer {
-  padding: 10px;
-}
+footer { padding: 10px; }
 
-footer .social {
-  text-align: center;
-}
+footer .social { text-align: center; }
 
-footer .social [class^="sm-"] {
-  display: inline-block;
-  background: #222222;
-  color: #FFFFFF;
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  margin: 2px;
-  font-size: 15px;
-  text-align: center;
-  transition: all .2s linear;
-}
+footer .social [class^="sm-"] { display: inline-block; background: #222222; color: #FFFFFF; border-radius: 50%; width: 30px; height: 30px; margin: 2px; font-size: 15px; text-align: center; transition: all .2s linear; }
 
-footer .social [class^="sm-"]:hover {
-  background: #FFFFFF;
-  color: #222222;
-  transform: scale(1.5);
-}
+footer .social [class^="sm-"]:hover { background: #FFFFFF; color: #222222; transform: scale(1.5); }
 
-footer .social [class^="sm-"] i.fa::before {
-  margin: 8px 0;
-  display: block;
-}
-/*# sourceMappingURL=style.css.map */
+footer .social [class^="sm-"] i.fa::before { margin: 8px 0; display: block; }
