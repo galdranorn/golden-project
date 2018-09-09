@@ -16,21 +16,33 @@ body {font-family: $fontMain;}
 
 .section-name {
     text-align: center;
+    font-family: Montserrat;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 800;
+    font-size: 24px;
 }
 
 .subsection-name {
     text-align: center;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 18px;
     font-family: $fontMain;
 }
 
 .section-description {
+    font-family: Georgia;
     text-align: center;
-    font-size: 15px;
+    font-size: 13px;
     font-style: italic;
+    color: $grayFont;
+    margin-top: 0;
+}
+
+.subsection-description {
+    font-size: 12px;
+    font-style: italic;
+    color: $grayFont;
+    font-family: Georgia;
 }
 
 .theme-button {
@@ -59,12 +71,17 @@ header {
     .hero {
         background: url('https://images.pexels.com/photos/269825/pexels-photo-269825.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
         background-size: cover;
-        height: 500px;
+        height: 400px;
        .logo {
-            line-height: 50px;
+            line-height: 40px;
+            width: 80px;
+            margin: 15px 0 0 20px;
        }
        nav {
         float: right;
+        margin-top: 15px;
+        font-size: 13px;
+        font-family: Montserrat;
            ul {
             list-style-type: none;
                li{
@@ -72,17 +89,17 @@ header {
                    a {
                     width: 100px;
                     text-align: center;
-                    line-height: 50px;
+                    line-height: 40px;
                     display: block;
-                    height: 50px;
+                    height: 40px;
                     text-decoration: none;
                     color: $white;
                     border-radius: 5px;
-                    font-weight: bold;
+                    font-weight: 400;
                     text-transform: uppercase;
                     transition: .2s ease-out;
                     &:hover {
-                        background: $darkGray;
+                        background: rgba(0, 0, 0, 0.3);
                         color: $themeColour;
                     }
                    }
@@ -92,14 +109,24 @@ header {
        .slogan {
             color: white;
             text-align: center;
-            .welcome {
-                font-style: italic;
-                margin-top: 10%;
-            }
-            .slogan {
-                text-transform: uppercase;
-                font-weight: 700;
-                font-size: 40px;
+            padding: 30px;
+            .sloganInside {
+                margin: 0 auto;
+                .welcome {
+                    font-style: italic;
+                    margin-top: 20px;
+                }
+                .sloganText {
+                    font-family: Montserrat;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    font-size: 40px;
+                }
+                .theme-button {
+                    font-size: 12px;
+                    padding: 12px 25px;
+                    margin-top: 30px;
+                }
             }
        }
    } 
@@ -107,31 +134,50 @@ header {
 
 /* ---- SERVICES SECTION ---- */
 .services {
+    margin-top: 60px;
+    .section-description {
+        margin: 0 0 60px 0;
+    }
+    .col {
+        padding: 0 10px;
+        margin-bottom: 60px;  
+        .subsection-name {
+            line-height: 30px;
+            margin: 10px;
+        }
+        .subsection-description {
+            text-align: center;
+        }
         .service {
             text-align: center;
             span {
                 text-align: center;
                 color: $themeColour;
                 border-radius: 50%;
-                width: 60px;
-                height: 60px;
-                font-size: 30px;
+                width: 50px;
+                height: 50px;
+                font-size: 25px;
                 transition: all .2s linear;
                 border-color: $themeColour;
                 border-width: 3px;
                 border-style: solid;
-                padding-top: 13px;
-                    &:hover {
-                        background: $darkGray;
-                        color: $themeColour;
-                        transform: scale(1.1);
-                    }
+                padding-top: 10px;
+                &:hover {
+                    background: $darkGray;
+                    color: $themeColour;
+                    transform: scale(1.1);
                 }
         }
+        }
+    }
 }
 /* ---- OUR PORTFOLIO ---- */
 
-.our-portfolio { 
+.our-portfolio {
+    padding: 60px 0 80px 0;
+    .section-description {
+        margin-bottom: 60px;
+    } 
     .pocket {
         text-align: center;
         width: 80%;
@@ -140,22 +186,27 @@ header {
         margin: 0 auto;
         .img {
             width: 100%;
+            max-width: 290px;
             position: relative;
+            margin: 0 auto;
             img {
                 width: 100%;
             }
         }
+        .subsection-name {
+            font-size: 14px;
+        }
         .layer {
-            font-size: 100px;
+            font-size: 50px;
+            padding-top: 25%;
             width: 100%;
             height: 100%;
             position: absolute;
-            background: rgba(0,0,0,0.6);
+            background: rgba(0,0,0,0.4);
             top: 0;
             left: 0;
             color: #fff;
             text-align: center;
-            line-height: 300px;
             opacity: 0;
             transition: .3s;
             a {
@@ -174,13 +225,21 @@ header {
 /* ---- ABOUT US SECTION ----*/
 
 .about-us {
+    padding: 60px 0;
     .row {
-        margin: 10px 0;
+        margin: 30px 0;
         display: flex;
+        .date {
+            text-transform: uppercase;
+        }
         img {
             border-radius: 50%;
             border: solid 10px $grayBackground;
             transition: .3s;
+            width: 100%;
+            max-width: 178px;
+            height: auto;
+            padding: auto 0;
             &:hover {
                 border: solid 10px $themeColour;
             }
@@ -224,6 +283,25 @@ header {
 /* ---- OUR AMAZING TEAM ----*/ 
 .our-amazing-team {
     text-align: center;
+    padding: 0 0 60px 0;
+    .col {
+        padding: 0 10px;
+        .section-description {
+            margin-bottom: 60px;
+        }
+    .subsection-name {
+        font-size: 14px;
+    }
+    img {
+        border-radius: 50%;
+        width: 80%;
+        max-width: 220px;
+        height: auto;
+        border: 10px solid white;
+        &:hover {
+            border: 10px solid $themeColour;
+        }
+    }
     [class^="sm-"] {
         display: inline-block;
         color: $darkGray;
@@ -251,17 +329,24 @@ header {
                 display: block;
             }
         }
-}
+    }
+    }
 /* ---- CONTACT US SECTION ----*/
 .contact-us {
     background-color: $darkGray;
     color: $white;
-    padding: 10px 0;
-    .btn {
-        margin: 2px;
+    padding: 80px 0;
+    .section-description {
+        margin-bottom: 50px;
     }
-    .msg {
-        padding-top: 0;
+    .btn {
+        margin: 20px;
+        &:hover {
+            color: $themeColour;
+        }
+    }
+    .col {
+        padding-top: 20px;
     }
 
 }
@@ -271,8 +356,7 @@ footer {
     padding: 10px;
     .copyright {
         font-family: $fontMain;
-        padding-top: 8px;
-        font-weight: bold;
+        padding-top: 12px;
     }
     .social {
         text-align: center;

@@ -17,21 +17,33 @@ body {
 
 .section-name {
   text-align: center;
+  font-family: Montserrat;
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 800;
+  font-size: 24px;
 }
 
 .subsection-name {
   text-align: center;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 18px;
   font-family: "Montserrat";
 }
 
 .section-description {
+  font-family: Georgia;
   text-align: center;
-  font-size: 15px;
+  font-size: 13px;
   font-style: italic;
+  color: #757575;
+  margin-top: 0;
+}
+
+.subsection-description {
+  font-size: 12px;
+  font-style: italic;
+  color: #757575;
+  font-family: Georgia;
 }
 
 .theme-button {
@@ -64,15 +76,20 @@ header .menuSmall {
 header .hero {
   background: url("https://images.pexels.com/photos/269825/pexels-photo-269825.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
   background-size: cover;
-  height: 500px;
+  height: 400px;
 }
 
 header .hero .logo {
-  line-height: 50px;
+  line-height: 40px;
+  width: 80px;
+  margin: 15px 0 0 20px;
 }
 
 header .hero nav {
   float: right;
+  margin-top: 15px;
+  font-size: 13px;
+  font-family: Montserrat;
 }
 
 header .hero nav ul {
@@ -86,64 +103,106 @@ header .hero nav ul li {
 header .hero nav ul li a {
   width: 100px;
   text-align: center;
-  line-height: 50px;
+  line-height: 40px;
   display: block;
-  height: 50px;
+  height: 40px;
   text-decoration: none;
   color: #FFFFFF;
   border-radius: 5px;
-  font-weight: bold;
+  font-weight: 400;
   text-transform: uppercase;
   transition: .2s ease-out;
 }
 
 header .hero nav ul li a:hover {
-  background: #222222;
+  background: rgba(0, 0, 0, 0.3);
   color: #F9D435;
 }
 
 header .hero .slogan {
   color: white;
   text-align: center;
+  padding: 30px;
 }
 
-header .hero .slogan .welcome {
+header .hero .slogan .sloganInside {
+  margin: 0 auto;
+}
+
+header .hero .slogan .sloganInside .welcome {
   font-style: italic;
-  margin-top: 10%;
+  margin-top: 20px;
 }
 
-header .hero .slogan .slogan {
+header .hero .slogan .sloganInside .sloganText {
+  font-family: Montserrat;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 40px;
 }
 
+header .hero .slogan .sloganInside .theme-button {
+  font-size: 12px;
+  padding: 12px 25px;
+  margin-top: 30px;
+}
+
 /* ---- SERVICES SECTION ---- */
-.services .service {
+.services {
+  margin-top: 60px;
+}
+
+.services .section-description {
+  margin: 0 0 60px 0;
+}
+
+.services .col {
+  padding: 0 10px;
+  margin-bottom: 60px;
+}
+
+.services .col .subsection-name {
+  line-height: 30px;
+  margin: 10px;
+}
+
+.services .col .subsection-description {
   text-align: center;
 }
 
-.services .service span {
+.services .col .service {
+  text-align: center;
+}
+
+.services .col .service span {
   text-align: center;
   color: #F9D435;
   border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  font-size: 30px;
+  width: 50px;
+  height: 50px;
+  font-size: 25px;
   transition: all .2s linear;
   border-color: #F9D435;
   border-width: 3px;
   border-style: solid;
-  padding-top: 13px;
+  padding-top: 10px;
 }
 
-.services .service span:hover {
+.services .col .service span:hover {
   background: #222222;
   color: #F9D435;
   transform: scale(1.1);
 }
 
 /* ---- OUR PORTFOLIO ---- */
+.our-portfolio {
+  padding: 60px 0 80px 0;
+}
+
+.our-portfolio .section-description {
+  margin-bottom: 60px;
+}
+
 .our-portfolio .pocket {
   text-align: center;
   width: 80%;
@@ -154,24 +213,30 @@ header .hero .slogan .slogan {
 
 .our-portfolio .pocket .img {
   width: 100%;
+  max-width: 290px;
   position: relative;
+  margin: 0 auto;
 }
 
 .our-portfolio .pocket .img img {
   width: 100%;
 }
 
+.our-portfolio .pocket .subsection-name {
+  font-size: 14px;
+}
+
 .our-portfolio .pocket .layer {
-  font-size: 100px;
+  font-size: 50px;
+  padding-top: 25%;
   width: 100%;
   height: 100%;
   position: absolute;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.4);
   top: 0;
   left: 0;
   color: #fff;
   text-align: center;
-  line-height: 300px;
   opacity: 0;
   transition: .3s;
 }
@@ -189,16 +254,28 @@ header .hero .slogan .slogan {
 }
 
 /* ---- ABOUT US SECTION ----*/
+.about-us {
+  padding: 60px 0;
+}
+
 .about-us .row {
-  margin: 10px 0;
+  margin: 30px 0;
   display: -ms-flexbox;
   display: flex;
+}
+
+.about-us .row .date {
+  text-transform: uppercase;
 }
 
 .about-us .row img {
   border-radius: 50%;
   border: solid 10px #f7f7f7;
   transition: .3s;
+  width: 100%;
+  max-width: 178px;
+  height: auto;
+  padding: auto 0;
 }
 
 .about-us .row img:hover {
@@ -257,9 +334,34 @@ header .hero .slogan .slogan {
 /* ---- OUR AMAZING TEAM ----*/
 .our-amazing-team {
   text-align: center;
+  padding: 0 0 60px 0;
 }
 
-.our-amazing-team [class^="sm-"] {
+.our-amazing-team .col {
+  padding: 0 10px;
+}
+
+.our-amazing-team .col .section-description {
+  margin-bottom: 60px;
+}
+
+.our-amazing-team .col .subsection-name {
+  font-size: 14px;
+}
+
+.our-amazing-team .col img {
+  border-radius: 50%;
+  width: 80%;
+  max-width: 220px;
+  height: auto;
+  border: 10px solid white;
+}
+
+.our-amazing-team .col img:hover {
+  border: 10px solid #F9D435;
+}
+
+.our-amazing-team .col [class^="sm-"] {
   display: inline-block;
   color: #222222;
   border-radius: 50%;
@@ -273,20 +375,20 @@ header .hero .slogan .slogan {
   transition: all .2s linear;
 }
 
-.our-amazing-team [class^="sm-"] a {
+.our-amazing-team .col [class^="sm-"] a {
   color: #222222;
 }
 
-.our-amazing-team [class^="sm-"]:hover {
+.our-amazing-team .col [class^="sm-"]:hover {
   background: #222222;
   transform: scale(1.2);
 }
 
-.our-amazing-team [class^="sm-"]:hover a {
+.our-amazing-team .col [class^="sm-"]:hover a {
   color: #F9D435;
 }
 
-.our-amazing-team [class^="sm-"] span.fa::before {
+.our-amazing-team .col [class^="sm-"] span.fa::before {
   margin: 5px 0;
   display: block;
 }
@@ -295,15 +397,23 @@ header .hero .slogan .slogan {
 .contact-us {
   background-color: #222222;
   color: #FFFFFF;
-  padding: 10px 0;
+  padding: 80px 0;
+}
+
+.contact-us .section-description {
+  margin-bottom: 50px;
 }
 
 .contact-us .btn {
-  margin: 2px;
+  margin: 20px;
 }
 
-.contact-us .msg {
-  padding-top: 0;
+.contact-us .btn:hover {
+  color: #F9D435;
+}
+
+.contact-us .col {
+  padding-top: 20px;
 }
 
 /* ---- FOOTER ---- */
@@ -313,8 +423,7 @@ footer {
 
 footer .copyright {
   font-family: "Montserrat";
-  padding-top: 8px;
-  font-weight: bold;
+  padding-top: 12px;
 }
 
 footer .social {
