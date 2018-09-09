@@ -1,5 +1,5 @@
 $fontMain: 'Montserrat';
-$fontSubtle: 'Verdana';
+$fontSubtle: 'Georgia';
 
 $themeColour: #F9D435;
 $grayBackground: #f7f7f7;
@@ -10,7 +10,7 @@ $black: #000000;
 
 /* ---- OVERALL STYLES ---- */
 body {font-family: $fontMain;}
-.fontSubtle {font-family: $fontSubtle; font-style: italic;}
+.fontSubtle {font-family: $fontSubtle;}
 .white-background {background-color: $white;}
 .gray-background {background-color: $grayBackground;}
 
@@ -172,6 +172,7 @@ header {
 .about-us {
     .row {
         margin: 10px 0;
+        display: flex;
         img {
             border-radius: 50%;
             border: solid 10px $grayBackground;
@@ -179,9 +180,6 @@ header {
             &:hover {
                 border: solid 10px $themeColour;
             }
-        }
-        .subsection-name {
-            text-align: initial;
         }
         .left {
             padding-right: 30px;
@@ -218,6 +216,29 @@ header {
     }
 }
 
+@media (max-width: 768px) {
+    .about-us {
+        .row {
+        flex-direction: column;
+        text-align: center;
+        .left {
+            padding-right: 0;
+            .subsection-name {text-align: center;}
+            p {text-align: center;}
+        }
+        .right {
+            padding-left: 0;
+            .subsection-name {text-align: center;}
+            p {text-align: center;}
+        }
+        &:nth-of-type(2n) {
+            flex-direction: column-reverse;
+        }
+        .story {
+            margin: 0 auto;
+        }
+    }
+}
 /* ---- OUR AMAZING TEAM ----*/ 
 .our-amazing-team {
     text-align: center;
@@ -291,4 +312,5 @@ footer {
             }
         }
     }
+}
 }

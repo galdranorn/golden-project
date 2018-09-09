@@ -4,8 +4,7 @@ body {
 }
 
 .fontSubtle {
-  font-family: "Verdana";
-  font-style: italic;
+  font-family: "Georgia";
 }
 
 .white-background {
@@ -185,6 +184,8 @@ header .hero .slogan .slogan {
 /* ---- ABOUT US SECTION ----*/
 .about-us .row {
   margin: 10px 0;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .about-us .row img {
@@ -195,10 +196,6 @@ header .hero .slogan .slogan {
 
 .about-us .row img:hover {
   border: solid 10px #F9D435;
-}
-
-.about-us .row .subsection-name {
-  text-align: initial;
 }
 
 .about-us .row .left {
@@ -250,88 +247,107 @@ header .hero .slogan .slogan {
   border: solid 10px #F9D435;
 }
 
-/* ---- OUR AMAZING TEAM ----*/
-.our-amazing-team {
-  text-align: center;
-}
-
-.our-amazing-team [class^="sm-"] {
-  display: inline-block;
-  color: #222222;
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  margin: 2px;
-  border-style: solid;
-  border-width: 2px;
-  font-size: 15px;
-  text-align: center;
-  transition: all .2s linear;
-}
-
-.our-amazing-team [class^="sm-"] a {
-  color: #222222;
-}
-
-.our-amazing-team [class^="sm-"]:hover {
-  background: #222222;
-  transform: scale(1.2);
-}
-
-.our-amazing-team [class^="sm-"]:hover a {
-  color: #F9D435;
-}
-
-.our-amazing-team [class^="sm-"] span.fa::before {
-  margin: 5px 0;
-  display: block;
-}
-
-/* ---- CONTACT US SECTION ----*/
-.contact-us {
-  background-color: #222222;
-  color: #FFFFFF;
-  padding: 10px 0;
-}
-
-.contact-us .btn {
-  margin: 2px;
-}
-
-.contact-us .msg {
-  padding-top: 0;
-}
-
-/* ---- FOOTER ---- */
-footer {
-  padding: 10px;
-}
-
-footer .social {
-  text-align: center;
-}
-
-footer .social [class^="sm-"] {
-  display: inline-block;
-  background: #222222;
-  color: #FFFFFF;
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  margin: 2px;
-  font-size: 15px;
-  text-align: center;
-  transition: all .2s linear;
-}
-
-footer .social [class^="sm-"]:hover {
-  background: #FFFFFF;
-  color: #222222;
-  transform: scale(1.5);
-}
-
-footer .social [class^="sm-"] i.fa::before {
-  margin: 8px 0;
-  display: block;
+@media (max-width: 768px) {
+  .about-us .row {
+    -ms-flex-direction: column;
+        flex-direction: column;
+    text-align: center;
+  }
+  .about-us .row .left {
+    padding-right: 0;
+  }
+  .about-us .row .left .subsection-name {
+    text-align: center;
+  }
+  .about-us .row .left p {
+    text-align: center;
+  }
+  .about-us .row .right {
+    padding-left: 0;
+  }
+  .about-us .row .right .subsection-name {
+    text-align: center;
+  }
+  .about-us .row .right p {
+    text-align: center;
+  }
+  .about-us .row:nth-of-type(2n) {
+    -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+  }
+  .about-us .row .story {
+    margin: 0 auto;
+  }
+  /* ---- OUR AMAZING TEAM ----*/
+  .our-amazing-team {
+    text-align: center;
+  }
+  .our-amazing-team [class^="sm-"] {
+    display: inline-block;
+    color: #222222;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin: 2px;
+    border-style: solid;
+    border-width: 2px;
+    font-size: 15px;
+    text-align: center;
+    transition: all .2s linear;
+  }
+  .our-amazing-team [class^="sm-"] a {
+    color: #222222;
+  }
+  .our-amazing-team [class^="sm-"]:hover {
+    background: #222222;
+    transform: scale(1.2);
+  }
+  .our-amazing-team [class^="sm-"]:hover a {
+    color: #F9D435;
+  }
+  .our-amazing-team [class^="sm-"] span.fa::before {
+    margin: 5px 0;
+    display: block;
+  }
+  /* ---- CONTACT US SECTION ----*/
+  .contact-us {
+    background-color: #222222;
+    color: #FFFFFF;
+    padding: 10px 0;
+  }
+  .contact-us .btn {
+    margin: 2px;
+  }
+  .contact-us .msg {
+    padding-top: 0;
+  }
+  /* ---- FOOTER ---- */
+  footer {
+    padding: 10px;
+  }
+  footer .social {
+    text-align: center;
+  }
+  footer .social [class^="sm-"] {
+    display: inline-block;
+    background: #222222;
+    color: #FFFFFF;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin: 2px;
+    font-size: 15px;
+    text-align: center;
+    transition: all .2s linear;
+  }
+  footer .social [class^="sm-"]:hover {
+    background: #FFFFFF;
+    color: #222222;
+    transform: scale(1.5);
+  }
+  footer .social [class^="sm-"] i.fa::before {
+    margin: 8px 0;
+    display: block;
+  }
 }
 /*# sourceMappingURL=style.css.map */
