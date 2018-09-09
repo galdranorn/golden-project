@@ -57,6 +57,10 @@ section {
 }
 
 /* ---- HEADER ----*/
+header .menuSmall {
+  display: none;
+}
+
 header .hero {
   background: url("https://images.pexels.com/photos/269825/pexels-photo-269825.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
   background-size: cover;
@@ -105,10 +109,13 @@ header .hero .slogan {
 
 header .hero .slogan .welcome {
   font-style: italic;
+  margin-top: 10%;
 }
 
 header .hero .slogan .slogan {
   text-transform: uppercase;
+  font-weight: 700;
+  font-size: 40px;
 }
 
 /* ---- SERVICES SECTION ---- */
@@ -304,6 +311,12 @@ footer {
   padding: 10px;
 }
 
+footer .copyright {
+  font-family: "Montserrat";
+  padding-top: 8px;
+  font-weight: bold;
+}
+
 footer .social {
   text-align: center;
 }
@@ -321,18 +334,54 @@ footer .social [class^="sm-"] {
   transition: all .2s linear;
 }
 
+footer .social [class^="sm-"] a {
+  color: white;
+}
+
 footer .social [class^="sm-"]:hover {
   background: #FFFFFF;
   color: #222222;
   transform: scale(1.5);
 }
 
-footer .social [class^="sm-"] i.fa::before {
+footer .social [class^="sm-"]:hover a {
+  color: #222222;
+}
+
+footer .social [class^="sm-"] span.fa::before {
   margin: 8px 0;
   display: block;
 }
 
-/* RENSPONSIVE */
+/* -------------- RENSPONSIVE ------------------ */
+/* ---- menu responsive ---- */
+@media (max-width: 768px) {
+  header .menuBig {
+    display: none;
+  }
+  header .menuSmall {
+    display: block;
+  }
+  header .menuSmall ul {
+    width: 100%;
+    background: #222222;
+  }
+  header .menuSmall ul a {
+    color: #FFFFFF;
+  }
+  header .menuSmall:hover span {
+    color: #F9D435;
+  }
+}
+
+/* ---- hero responsive ---- */
+@media (max-width: 768px) {
+  header .welcome {
+    font-size: 3vh;
+  }
+}
+
+/* ---- about us responsive ----*/
 @media (max-width: 768px) {
   .about-us .row {
     -ms-flex-direction: column;

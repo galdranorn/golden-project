@@ -55,7 +55,8 @@ section {
 
 /* ---- HEADER ----*/
 header {
-   .hero {
+    .menuSmall {display: none;}
+    .hero {
         background: url('https://images.pexels.com/photos/269825/pexels-photo-269825.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
         background-size: cover;
         height: 500px;
@@ -93,9 +94,12 @@ header {
             text-align: center;
             .welcome {
                 font-style: italic;
+                margin-top: 10%;
             }
             .slogan {
                 text-transform: uppercase;
+                font-weight: 700;
+                font-size: 40px;
             }
        }
    } 
@@ -265,6 +269,11 @@ header {
 /* ---- FOOTER ---- */
 footer {
     padding: 10px;
+    .copyright {
+        font-family: $fontMain;
+        padding-top: 8px;
+        font-weight: bold;
+    }
     .social {
         text-align: center;
         [class^="sm-"] {
@@ -278,12 +287,18 @@ footer {
             font-size: 15px;
             text-align: center; 
             transition: all .2s linear;
+            a {
+                color: white;
+            }
             &:hover {
                 background: $white;
                 color: $darkGray;
                 transform: scale(1.5);
+                a {
+                    color: $darkGray;
+                }
             }
-            i.fa::before {
+            span.fa::before {
                 margin: 8px 0;
                 display: block;
             }
@@ -293,7 +308,44 @@ footer {
 
 
 
-/* RENSPONSIVE */
+/* -------------- RENSPONSIVE ------------------ */
+
+/* ---- menu responsive ---- */
+
+@media (max-width: 768px) {
+    header {
+        .menuBig {
+            display: none;
+        }
+        .menuSmall {
+            display: block;
+            ul {
+                width: 100%;
+                background: $darkGray;
+                    a {
+                    color: $white;
+                    }
+                }           
+        &:hover {
+                span {
+                    color: $themeColour;
+                }
+            }
+        }
+    }
+}
+
+/* ---- hero responsive ---- */
+
+@media (max-width: 768px) {
+    header {
+        .welcome {
+            font-size: 3vh;
+        }
+    }
+}
+
+/* ---- about us responsive ----*/
 
 @media (max-width: 768px) {
     .about-us {
