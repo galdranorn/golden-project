@@ -105,7 +105,7 @@ header {
 .services {
         .service {
             text-align: center;
-            i {
+            span {
                 text-align: center;
                 color: $themeColour;
                 border-radius: 50%;
@@ -133,6 +133,7 @@ header {
         width: 80%;
         background-color: white;
         padding: 5px;
+        margin: 0 auto;
         .img {
             width: 100%;
             position: relative;
@@ -153,7 +154,10 @@ header {
             line-height: 300px;
             opacity: 0;
             transition: .3s;
-            i:hover {
+            a {
+                color: #fff;
+            }
+            span:hover {
                 color: $themeColour
             }
             &:hover {
@@ -164,6 +168,56 @@ header {
 }
 
 /* ---- ABOUT US SECTION ----*/
+
+.about-us {
+    .row {
+        margin: 10px 0;
+        img {
+            border-radius: 50%;
+            border: solid 10px $grayBackground;
+            transition: .3s;
+            &:hover {
+                border: solid 10px $themeColour;
+            }
+        }
+        .subsection-name {
+            text-align: initial;
+        }
+        .left {
+            padding-right: 30px;
+            .subsection-name {text-align: right;}
+            p {text-align: right;}
+        }
+        .right {
+            text-align: left;
+            padding-left: 30px;
+            .subsection-name {text-align: left;}
+            p {text-align: left;}
+        }
+    }
+    .story {
+        width: 178px;
+        height: 178px;
+        border-radius: 50%;
+        background: $themeColour;
+        font-weight: bold;
+        color: #fff;
+        text-transform: uppercase;
+        text-align: center;
+        margin-left: 25px;
+        border: solid 10px $grayBackground;
+        transition: .2s;
+        p {
+            margin-top: 40px;
+        }
+        &:hover {
+            background: $darkGray;
+            color: $themeColour;
+            border: solid 10px $themeColour;
+        }
+    }
+}
+
 /* ---- OUR AMAZING TEAM ----*/ 
 .our-amazing-team {
     text-align: center;
@@ -179,12 +233,17 @@ header {
         font-size: 15px;
         text-align: center; 
         transition: all .2s linear;
+        a {
+            color: $darkGray;
+        }
         &:hover {
             background: $darkGray;
-            color: $themeColour;
             transform: scale(1.2);
+            a {
+                color: $themeColour;
             }
-            i.fa::before {
+            }
+            span.fa::before {
                 margin: 5px 0;
                 display: block;
             }
