@@ -231,19 +231,33 @@ header {
         display: flex;
         .date {
             text-transform: uppercase;
-        }
-        img {
-            border-radius: 50%;
-            border: solid 10px $grayBackground;
-            transition: .3s;
-            width: 100%;
-            max-width: 178px;
-            height: auto;
-            padding: auto 0;
-            &:hover {
-                border: solid 10px $themeColour;
             }
-        }
+        .picture {
+            position: relative;
+            &::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                right: 50%;
+                height: 120%;
+                border: 2px solid $grayBackground;
+                z-index: 0;
+                }
+            img {
+                border-radius: 50%;
+                border: solid 10px $grayBackground;
+                transition: .3s;
+                width: 100%;
+                max-width: 178px;
+                height: auto;
+                padding: auto 0;
+                position: relative;
+                z-index: 1;
+                &:hover {
+                    border: solid 10px $themeColour;
+                    }
+                }
+            }
         .left {
             padding-right: 30px;
             .subsection-name {text-align: right;}
@@ -265,7 +279,7 @@ header {
         color: #fff;
         text-transform: uppercase;
         text-align: center;
-        margin-left: 25px;
+        margin-left: 15px;
         border: solid 10px $grayBackground;
         transition: .2s;
         p {

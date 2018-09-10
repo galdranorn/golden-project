@@ -268,7 +268,21 @@ header .hero .slogan .sloganInside .theme-button {
   text-transform: uppercase;
 }
 
-.about-us .row img {
+.about-us .row .picture {
+  position: relative;
+}
+
+.about-us .row .picture::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 50%;
+  height: 120%;
+  border: 2px solid #f7f7f7;
+  z-index: 0;
+}
+
+.about-us .row .picture img {
   border-radius: 50%;
   border: solid 10px #f7f7f7;
   transition: .3s;
@@ -276,9 +290,11 @@ header .hero .slogan .sloganInside .theme-button {
   max-width: 178px;
   height: auto;
   padding: auto 0;
+  position: relative;
+  z-index: 1;
 }
 
-.about-us .row img:hover {
+.about-us .row .picture img:hover {
   border: solid 10px #F9D435;
 }
 
@@ -316,7 +332,7 @@ header .hero .slogan .sloganInside .theme-button {
   color: #fff;
   text-transform: uppercase;
   text-align: center;
-  margin-left: 25px;
+  margin-left: 15px;
   border: solid 10px #f7f7f7;
   transition: .2s;
 }
