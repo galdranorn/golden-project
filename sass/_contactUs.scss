@@ -1,0 +1,18 @@
+.contact-us {
+    background-color: $darkGray;
+    color: $white;
+    padding: 80px 0;
+    .section-description {
+        margin-bottom: 50px;
+    }
+    .btn {
+        margin: 20px;
+        &:hover {
+            color: $themeColour;
+        }
+    }
+    .col {
+        padding-top: 20px;
+    }
+
+}

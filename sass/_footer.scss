@@ -1,0 +1,37 @@
+footer {
+    padding: 10px;
+    .copyright {
+        font-family: $fontMain;
+        padding-top: 12px;
+    }
+    .social {
+        text-align: center;
+        [class^="sm-"] {
+            display: inline-block;
+            background: $darkGray;
+            color: $white;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            margin: 2px;
+            font-size: 15px;
+            text-align: center; 
+            transition: all .2s linear;
+            a {
+                color: white;
+            }
+            &:hover {
+                background: $white;
+                color: $darkGray;
+                transform: scale(1.5);
+                a {
+                    color: $darkGray;
+                }
+            }
+            span.fa::before {
+                margin: 8px 0;
+                display: block;
+            }
+        }
+    }
+}

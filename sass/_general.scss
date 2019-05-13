@@ -1,0 +1,55 @@
+body {font-family: $fontMain;}
+.fontSubtle {font-family: $fontSubtle;}
+.white-background {background-color: $white;}
+.gray-background {background-color: $grayBackground;}
+
+.section {
+    padding: 10px 0;
+    &-name {
+        text-align: center;
+        font-family: Montserrat;
+        text-transform: uppercase;
+        font-weight: 800;
+        font-size: 24px;
+    }
+    &-description {
+        font-family: Georgia;
+        text-align: center;
+        font-size: 13px;
+        font-style: italic;
+        color: $grayFont;
+        margin-top: 0;
+    }
+}
+
+.subsection {
+    &-name {
+        text-align: center;
+        font-weight: 700;
+        font-size: 18px;
+        font-family: $fontMain;
+    }
+    &-description {
+        font-size: 12px;
+        font-style: italic;
+        color: $grayFont;
+        font-family: Georgia;
+    }
+}
+
+.theme-button {
+    background-color: $themeColour;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    font-size: 14px;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: .2s ease-out;
+    &:hover {
+        background-color: $darkGray;
+        color: $themeColour;
+        transform: scale(1.1);
+    }
+}

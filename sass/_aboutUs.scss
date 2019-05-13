@@ -1,0 +1,92 @@
+.about-us {
+    padding: 60px 0;
+    .row {
+        margin: 30px 0;
+        display: flex;
+        .date {
+            text-transform: uppercase;
+            }
+        .picture {
+            position: relative;
+            &::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                right: 50%;
+                height: 120%;
+                border: 2px solid $grayBackground;
+                z-index: 0;
+                }
+            img {
+                border-radius: 50%;
+                border: solid 10px $grayBackground;
+                transition: .3s;
+                width: 100%;
+                max-width: 178px;
+                height: auto;
+                padding: auto 0;
+                position: relative;
+                z-index: 1;
+                &:hover {
+                    border: solid 10px $themeColour;
+                    }
+                }
+            }
+        .left {
+            padding-right: 30px;
+            .subsection-name {text-align: right;}
+            p {text-align: right;}
+        }
+        .right {
+            text-align: left;
+            padding-left: 30px;
+            .subsection-name {text-align: left;}
+            p {text-align: left;}
+        }
+    }
+    .story {
+        width: 178px;
+        height: 178px;
+        border-radius: 50%;
+        background: $themeColour;
+        font-weight: bold;
+        color: #fff;
+        text-transform: uppercase;
+        text-align: center;
+        margin-left: 15px;
+        border: solid 10px $grayBackground;
+        transition: .2s;
+        p {
+            margin-top: 40px;
+        }
+        &:hover {
+            background: $darkGray;
+            color: $themeColour;
+            border: solid 10px $themeColour;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .about-us {
+        .row {
+        flex-direction: column;
+        text-align: center;
+        .left {
+            padding-right: 0;
+            .subsection-name {text-align: center;}
+            p {text-align: center;}
+        }
+        .right {
+            padding-left: 0;
+            .subsection-name {text-align: center;}
+            p {text-align: center;}
+        }
+        &:nth-of-type(2n) {
+            flex-direction: column-reverse;
+        }
+        .story {
+            margin: 0 auto;
+        }
+    }
+}}
